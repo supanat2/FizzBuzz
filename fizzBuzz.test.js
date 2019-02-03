@@ -21,5 +21,13 @@ test('x มีเลข 5 หลักสิบได้ Bizz', () =>{
 
 test('x หารทั้ง 5 และ 3 ลง ตัว ได้ FizzBuzz', () =>{
     expect(fizzBuzz(15)).toBe("FizzBuzz")
-    
+
+})
+
+test('x หาร 5 ลงตัว และมี 3 ในหลักสิบ ได้ FizzBuzz', () =>{
+    expect(fizzBuzz(35)).toBe("FizzBuzz")
+})
+
+test('x หาร 3 ลงตัว และมี 5 ในหลักสิบ ได้ FizzBuzz', () =>{
+    expect(fizzBuzz(51)).toBe("FizzBuzz")
 })

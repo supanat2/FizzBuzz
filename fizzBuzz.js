@@ -1,5 +1,5 @@
 function fizzBuzz(x) {
-    if(x%3 === 0 && x%5 === 0){
+    if(x%3 === 0 && x%5 === 0 || x%3 === 0 && parseInt(x/10) === 5 || x%5 === 0 && parseInt(x/10) === 3){
         return "FizzBuzz"
     }
     else if(x%3 === 0){
@@ -14,7 +14,7 @@ function fizzBuzz(x) {
     else if(parseInt(x/10) === 5){
         return "Buzz"
     }
-return '${x}'
+return `${x}`
 }
 
 module.exports = fizzBuzz;
